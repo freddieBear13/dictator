@@ -23,6 +23,6 @@ buttonEl.addEventListener('click', () => {
         const randomMsg = messages[Math.floor(Math.random() * messages.length)];
         messageEl.textContent = `❌${randomMsg}`;
         spinnerEl.classList.add('hidden');
-        buttonEl.disabled = true;
+        buttonEl.disabled = false;
     }, 1500);
 });
